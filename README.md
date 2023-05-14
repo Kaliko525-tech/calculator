@@ -21,3 +21,4 @@ I feel way in over my head right now like everything I have learned just hasn't 
 
 starting with JS:
 
+created basic math funcitons, then a operate function that calls on the basic maths fucntions based on a if..else statement that calls the needed function based on the operator selected. 
