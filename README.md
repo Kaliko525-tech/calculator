@@ -17,3 +17,7 @@ as according to the assignment page I will start with creating funcutions to all
 
 14 May 2023
 
+I feel way in over my head right now like everything I have learned just hasn't stuck with me, this is going to be hard.
+
+starting with JS:
+
