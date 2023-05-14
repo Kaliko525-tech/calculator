@@ -48,9 +48,3 @@ function operate(a, b ,c){
     }
     
 }
-
-add(1, 1)
-sub(2, 1)
-multiply(2, 2)
-divide(2, 2)
-operate(1, '/' , 2)
