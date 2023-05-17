@@ -13,14 +13,17 @@ body {
 
 .calcDisplay > p {
     font-family: 'digital-7';
-    text-size-adjust: ;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 .calcDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     border: 1px solid;
     width: 300px;
     height: 70px;
-    text-align: right;
 }
 
 .calculator {
