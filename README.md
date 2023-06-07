@@ -27,4 +27,15 @@ JS is done for now.
 
 moving on with HTML:
 
-adding all buttons for the basis of the calculator. 
+adding all buttons for the basis of the calculator.
+
+17th may 2023:
+
+used css to format all the html to represent a calculator. 
+
+18th may 2023:
+
+back to JS:
+
+need to hook up all the 'number' butons to display the numbers on the calcDisplay. I've completely forgotten how to do that though. I know it will require DOM manipulation so I will start there.
+
