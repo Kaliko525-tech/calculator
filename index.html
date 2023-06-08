@@ -16,7 +16,7 @@
         </div>
 
         <div class="calculator">    
-            <button value="" id="clear">AC</button>
+            <button value="" onclick="clearDisplay()" id="clear">AC</button>
             <button value="" id="convert">+/-</button>
             <button value="" id="divide">/</button>
             <button value="7" onclick="displayNumber(this)" id="seven">7</button>
@@ -30,10 +30,10 @@
             <button value="1" onclick="displayNumber(this)" id="one">1</button>
             <button value="2" onclick="displayNumber(this)" id="two">2</button>
             <button value="3" onclick="displayNumber(this)" id="three">3</button>
-            <button value="" id="add">+</button>
+            <button value="+" onclick="operands(this)" id="add">+</button>
             <button value="0" onclick="displayNumber(this)" id="zero">0</button>
-            <button value="" id="decimal">.</button>
-            <button value="" id="equals">=</button>
+            <button value="." onclick="displayNumber(this)" id="decimal">.</button> <!--not working when using parseInt()-->
+            <button value="=" onclick="operands(this)" id="equals">=</button>
         </div>
 
     </body>

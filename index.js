@@ -3,49 +3,31 @@ let operator = undefined;
 let secondNumber = undefined;
 let displayValue = undefined
 
-const zero = document.getElementById("zero")
-const one = document.getElementById("one")
-const two = document.getElementById("two")
-const three = document.getElementById("three")
-const four = document.getElementById("four")
-const five = document.getElementById("five")
-const six = document.getElementById("six")
-const seven = document.getElementById("seven")
-const eight = document.getElementById("eight")
-const nine = document.getElementById("nine")
 const display = document.getElementById('display')
 
 function add(a, b){
-    let firNum = a;
-    let sndNum = b;
-    let sum = a + b
-    return console.log(sum)
+    sum = a + b
+    return sum
 }
 
 function sub(a, b){
-    let firNum = a;
-    let sndNum = b;
     let sum = a - b
-    return console.log(sum)
+    return sum
 }
 
 function multiply(a, b){
-    let firNum = a;
-    let sndNum = b;
     let sum = a * b;
-    return console.log(sum)
+    return sum
 }
 
 function divide(a, b){
-    let firNum = a;
-    let sndNum = b;
     let sum = a / b;
-    return console.log(sum)
+    return sum
 }
 
 function operate(a, b ,c){
     let firstNum = a
-    let secondNum = c
+    let secondNum = parseInt(c)
     let operator = b
 
     if (operator === '+') {
@@ -63,9 +45,30 @@ function operate(a, b ,c){
 }
 
 function displayNumber(button){
-   let x = button.value;
+
+    let x = button.value;
    display.innerHTML += x
-   console.log(displayValue)
+   secondNumber = display.innerHTML
+   console.log(secondNumber)
+
+}
+
+function clearDisplay(){
+    display.innerHTML = ''
+    firstNumber = ''
+    secondNumber = ''
+}
+
+function operands(button) {
+
+    if( button.value ==='+') {
+        firstNumber = parseInt(display.innerHTML)
+        operator = '+'
+        display.innerHTML = ''
+    } else {
+        operate(firstNumber, operator, secondNumber)
+        display.innerHTML = `${sum}`
+    }   
 }
 
 
