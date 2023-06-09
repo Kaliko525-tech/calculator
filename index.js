@@ -42,8 +42,7 @@ function operate(a, b ,c){
         divide(firstNum, secondNum)
     } else {
         console.log('error')
-    }
-    
+}
 }
 
 function displayNumber(button){
@@ -58,6 +57,7 @@ function clearDisplay(){
     display.innerHTML = ''
     previousValue = ''
     currentValue = ''
+    operator = ''
     sum = ''
     sumDisplay.innerHTML = ''
 }
@@ -86,7 +86,3 @@ function operands(button) {
         sumDisplay.innerHTML = `${sum}`
     }   
 }
-
-
-console.log(display)
-console.log(displayValue)
