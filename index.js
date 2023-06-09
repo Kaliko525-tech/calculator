@@ -86,3 +86,7 @@ function operands(button) {
         sumDisplay.innerHTML = `${sum}`
     }   
 }
+
+
+
+console.log('test')
