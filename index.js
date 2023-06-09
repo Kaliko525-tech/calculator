@@ -1,6 +1,6 @@
-let firstNumber = undefined;
+let previousValue = undefined;
 let operator = undefined;
-let secondNumber = undefined;
+let currentValue = undefined;
 let displayValue = undefined
 
 const display = document.getElementById('display')
@@ -48,21 +48,21 @@ function displayNumber(button){
 
     let x = button.value;
    display.innerHTML += x
-   secondNumber = display.innerHTML
+   currentValue = display.innerHTML
    console.log(secondNumber)
 
 }
 
 function clearDisplay(){
     display.innerHTML = ''
-    firstNumber = ''
-    secondNumber = ''
+    previousValue = ''
+    currentValue = ''
 }
 
 function operands(button) {
 
     if( button.value ==='+') {
-        firstNumber = parseInt(display.innerHTML)
+        previousValue = parseInt(display.innerHTML)
         operator = '+'
         display.innerHTML = ''
     } else {
