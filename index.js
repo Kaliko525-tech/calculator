@@ -2,6 +2,7 @@ let previousValue = undefined;
 let operator = undefined;
 let currentValue = undefined;
 let displayValue = undefined
+let sum = ""
 
 const display = document.getElementById('display')
 const sumDisplay = document.getElementById('sumDisplay')
@@ -12,17 +13,17 @@ function add(a, b){
 }
 
 function sub(a, b){
-    let sum = a - b
+    sum = a - b
     return sum
 }
 
 function multiply(a, b){
-    let sum = a * b;
+     sum = a * b;
     return sum
 }
 
 function divide(a, b){
-    let sum = a / b;
+     sum = a / b;
     return sum
 }
 
@@ -57,6 +58,8 @@ function clearDisplay(){
     display.innerHTML = ''
     previousValue = ''
     currentValue = ''
+    sum = ''
+    sumDisplay.innerHTML = ''
 }
 
 function operands(button) {
@@ -64,10 +67,22 @@ function operands(button) {
     if( button.value ==='+') {
         previousValue = parseInt(currentValue)
         operator = '+'
-        display.innerHTML = '+'
+        display.innerHTML = ''
+    } else if( button.value ==='-') {
+        previousValue = parseInt(currentValue)
+        operator = '-'
+        display.innerHTML = ''
+    } else if( button.value ==='*') {
+        previousValue = parseInt(currentValue)
+        operator = '*'
+        display.innerHTML = ''
+    } else if( button.value ==='/') {
+        previousValue = parseInt(currentValue)
+        operator = '/'
+        display.innerHTML = ''
     } else {
         operate(previousValue, operator, currentValue)
-        display.innerHTML = `${sum}`
+        display.innerHTML = `${previousValue} ${operator} ${currentValue}`
         sumDisplay.innerHTML = `${sum}`
     }   
 }

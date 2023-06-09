@@ -21,15 +21,15 @@
         <div class="calculator">    
             <button value="" onclick="clearDisplay()" id="clear">AC</button>
             <button value="" id="convert">+/-</button>
-            <button value="" id="divide">/</button>
+            <button value="/" onclick="operands(this)" id="divide">/</button>
             <button value="7" onclick="displayNumber(this)" id="seven">7</button>
             <button value="8" onclick="displayNumber(this)" id="eight">8</button>
             <button value="9" onclick="displayNumber(this)" id="nine">9</button>
-            <button value="" id="multiply">X</button>
+            <button value="*" onclick="operands(this)" id="multiply">X</button>
             <button value="4" onclick="displayNumber(this)" id="four">4</button>
             <button value="5" onclick="displayNumber(this)" id="five">5</button>
             <button value="6" onclick="displayNumber(this)" id="six">6</button>
-            <button value="" id="subtract">-</button>
+            <button value="-" onclick="operands(this)" id="subtract">-</button>
             <button value="1" onclick="displayNumber(this)" id="one">1</button>
             <button value="2" onclick="displayNumber(this)" id="two">2</button>
             <button value="3" onclick="displayNumber(this)" id="three">3</button>
