@@ -62,11 +62,11 @@ function clearDisplay(){
 function operands(button) {
 
     if( button.value ==='+') {
-        firstNumber = parseInt(display.innerHTML)
+        previousValue = parseInt(currentValue)
         operator = '+'
-        display.innerHTML = ''
+        display.innerHTML = '+'
     } else {
-        operate(firstNumber, operator, secondNumber)
+        operate(previousValue, operator, currentValue)
         display.innerHTML = `${sum}`
     }   
 }
