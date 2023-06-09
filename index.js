@@ -4,6 +4,7 @@ let currentValue = undefined;
 let displayValue = undefined
 
 const display = document.getElementById('display')
+const sumDisplay = document.getElementById('sumDisplay')
 
 function add(a, b){
     sum = a + b
@@ -67,6 +68,7 @@ function operands(button) {
     } else {
         operate(previousValue, operator, currentValue)
         display.innerHTML = `${sum}`
+        sumDisplay.innerHTML = `${sum}`
     }   
 }
 
