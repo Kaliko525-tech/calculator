@@ -39,3 +39,8 @@ back to JS:
 
 need to hook up all the 'number' butons to display the numbers on the calcDisplay. I've completely forgotten how to do that though. I know it will require DOM manipulation so I will start there.
 
+9/6/23
+
+hooked up all the wiring got the values to display when you click the buttons, I even got the things to operate, I have a basic super simple calculator working. 
+
+something something, I need to differentiate the whole variables better, firstnumber, secondnumber, display value, the sum. I suppose this is all apart of being able to do multiple calculations at once or one after the other. so lets just keep this in mind. it is the next step. 
