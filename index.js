@@ -45,19 +45,19 @@ function clearDisplay(){
 function operands(button) {
 
     if( button.value ==='+') {
-        previousValue = parseInt(currentValue)
+        previousValue = currentValue
         operator = '+'
         display.innerHTML = ''
     } else if( button.value ==='-') {
-        previousValue = parseInt(currentValue)
+        previousValue = currentValue
         operator = '-'
         display.innerHTML = ''
     } else if( button.value ==='*') {
-        previousValue = parseInt(currentValue)
+        previousValue = currentValue
         operator = '*'
         display.innerHTML = ''
     } else if( button.value ==='/') {
-        previousValue = parseInt(currentValue)
+        previousValue = currentValue
         operator = '/'
         display.innerHTML = ''
     } else {
