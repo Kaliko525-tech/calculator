@@ -44,5 +44,30 @@ body {
     border: 1px solid;
 }
 
+.ops {
+    background-color: aqua;
+}
 
+.equ{
+    background-color: blueviolet;
+}
 
+.num {
+    background-color: aquamarine;
+}
+
+#convert{
+    background-color: red;
+}
+
+#clear {
+    background-color: orange;
+}
+
+#del {
+    background-color: green;
+}
+
+#Percentage {
+    background-color: turquoise;
+}
