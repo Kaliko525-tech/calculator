@@ -1,72 +1,91 @@
-let previousValue = '';
-let operator = '';
-let currentValue = '';
-let displayValue = '';
-let sum = ""
+const numButtons = document.querySelectorAll('.num')
+const opsButtons = document.querySelectorAll('.ops')
+const clearAll = document.querySelector('.ac')
+const equalButton = document.querySelector('.equ')
+const display = document.querySelector('#display')
+const sumDisplay = document.querySelector('#sumDisplay')
 
-const display = document.getElementById('display')
-const sumDisplay = document.getElementById('sumDisplay')
+let currentNum = ''
+let previousNum = ''
+let operationState = ''
 
+function calculate() {
+    
+    let previous = parseFloat(previousNum)
+    let current = parseFloat(currentNum)
+    let result
+    if (operationState == '+') {
+        result = previous + current
+    } else if (operationState == '-') {
+        result = previous - current
+    } else if (operationState == '/') {
+        result = previous / current
+    } else if (operationState == '*') {
+        result = previous * current
+    }
 
-function operate(a, b){
-    let firstNum = parseFloat(a)
-    let secondNum = parseFloat(b)
-
-    if (operator === '+') {
-       return sum = firstNum + secondNum
-    } else if (operator === '-') {
-        return sum = firstNum - secondNum
-    }else if (operator === '*'){
-        return sum = firstNum * secondNum
-    }else if (operator === '/'){
-        return sum = firstNum / secondNum
-    } else {
-        console.log('error')
-}
-}
-
-function displayNumber(button){
-
-    let x = button.value;
-   display.innerHTML += x
-   currentValue = display.innerHTML
-
+    console.log(previous)
+    console.log(current)
+    currentNum = result
+    previousNum = ''
+    operationState = ''
 }
 
-function clearDisplay(){
-    display.innerHTML = ''
-    previousValue = ''
-    currentValue = ''
-    operator = ''
-    sum = ''
-    sumDisplay.innerHTML = ''
+function buttonCont() {
+
+    numButtons.forEach((button) => {
+
+        button.addEventListener('click', () => {
+            if (currentNum == 0) {
+                currentNum = ''
+            }
+            if (button.innerText == '.' && currentNum.includes('.')) return
+            currentNum += (button.innerText)
+            refreshDisplay()
+            console.log(currentNum)
+        })
+    })
+
+    opsButtons.forEach((button) => {
+
+        button.addEventListener('click', () => {
+            operate()
+            operationState = (button.innerText)
+            
+            currentNum = ''
+            refreshDisplay()
+
+            console.log(operationState)
+        })
+    })
+
+    equalButton.addEventListener('click', () => {
+        calculate();
+        refreshDisplay()
+    });
+
+    clearAll.addEventListener('click', () => {
+        currentNum = ''
+        previousNum = ''
+        operationState = ''
+        refreshDisplay()
+    })
+
 }
 
-function operands(button) {
+function operate() {
+    if (currentNum == '') return;
 
-    if( button.value ==='+') {
-        previousValue = currentValue
-        operator = '+'
-        display.innerHTML = ''
-    } else if( button.value ==='-') {
-        previousValue = currentValue
-        operator = '-'
-        display.innerHTML = ''
-    } else if( button.value ==='*') {
-        previousValue = currentValue
-        operator = '*'
-        display.innerHTML = ''
-    } else if( button.value ==='/') {
-        previousValue = currentValue
-        operator = '/'
-        display.innerHTML = ''
-    } else {
-        operate(previousValue, currentValue)
-        display.innerHTML = `${previousValue} ${operator} ${currentValue}`
-        sumDisplay.innerHTML = `${sum}`
-    }   
+    if (previousNum !== '' && operationState !== '') {
+        calculate()
+    }
+    previousNum = currentNum ;
+    currentNum = ''
 }
 
+function refreshDisplay() {
+    display.textContent = operationState + '' + currentNum
+    sumDisplay.textContent = previousNum
+}
 
-
-console.log('test')
+buttonCont()
