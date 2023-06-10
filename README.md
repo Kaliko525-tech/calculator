@@ -63,4 +63,4 @@ still have a few things to do before finishing up this project.
 extra extra credit:
 
 1.add a % button.
-2. get the conversion (+/-) button to work.
+2. get the conversion (+/-) button to work. (done)
