@@ -111,4 +111,9 @@ function convert() {
     }
 }
 
+function percentage(){
+    currentNum = currentNum/100
+    display.textContent = currentNum
+}
+
 buttonCont()

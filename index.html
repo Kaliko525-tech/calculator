@@ -21,7 +21,7 @@
         <div class="calculator">    
             <button type="button" class="ac" id="clear">AC</button>
             <button onclick="delete1()">del</button>
-            <button type="button" onclick="convert()" id="convert">+/-</button>
+            <button type="button" onclick='percentage()' id="Percentage">%</button>
             <button type="button" class="btn ops" id="divide">/</button>
             <button type="button" class="btn num" id="seven">7</button>
             <button type="button" class="btn num" id="eight">8</button>
@@ -36,8 +36,8 @@
             <button type="button" class="btn num" id="three">3</button>
             <button type="button" class="btn ops" id="add">+</button>
             <button type="button" class="btn num zero" id="zero">0</button>
-            <button type="button" class="btn ops" id="Percentage">%</button>
-            <button type="button" class="btn num" id="decimal">.</button> <!--not working when using parseInt()-->
+            <button type="button" onclick="convert()" id="convert">+/-</button>
+            <button type="button" class="btn num" id="decimal">.</button>
             <button type="button" class="btn equ" id="equals">=</button>
         </div>
 
