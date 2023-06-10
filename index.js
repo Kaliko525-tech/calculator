@@ -88,4 +88,9 @@ function refreshDisplay() {
     sumDisplay.textContent = previousNum
 }
 
+function delete1() {
+    display.textContent = display.textContent.slice(0,-1)
+    currentNum = currentNum.slice(0, -1)
+}
+
 buttonCont()

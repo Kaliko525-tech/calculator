@@ -57,5 +57,5 @@ still have a few things to do before finishing up this project.
 
 1. leave a snarky remark if someone tried to divide by 0.
 2. make it look nice with CSS
-3.add a backspace button
+3.add a backspace button (done)
 4. add keyboard support
