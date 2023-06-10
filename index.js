@@ -1,16 +1,16 @@
-let previousValue = undefined;
-let operator = undefined;
-let currentValue = undefined;
-let displayValue = undefined
+let previousValue = '';
+let operator = '';
+let currentValue = '';
+let displayValue = '';
 let sum = ""
 
 const display = document.getElementById('display')
 const sumDisplay = document.getElementById('sumDisplay')
 
 
-function operate(a, c){
+function operate(a, b){
     let firstNum = parseFloat(a)
-    let secondNum = parseFloat(c)
+    let secondNum = parseFloat(b)
 
     if (operator === '+') {
        return sum = firstNum + secondNum
