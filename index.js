@@ -7,39 +7,19 @@ let sum = ""
 const display = document.getElementById('display')
 const sumDisplay = document.getElementById('sumDisplay')
 
-function add(a, b){
-    sum = a + b
-    return sum
-}
 
-function sub(a, b){
-    sum = a - b
-    return sum
-}
-
-function multiply(a, b){
-     sum = a * b;
-    return sum
-}
-
-function divide(a, b){
-     sum = a / b;
-    return sum
-}
-
-function operate(a, b ,c){
-    let firstNum = a
-    let secondNum = parseInt(c)
-    let operator = b
+function operate(a, c){
+    let firstNum = parseFloat(a)
+    let secondNum = parseFloat(c)
 
     if (operator === '+') {
-        add(firstNum, secondNum)
+       return sum = firstNum + secondNum
     } else if (operator === '-') {
-        sub(firstNum, secondNum)
+        return sum = firstNum - secondNum
     }else if (operator === '*'){
-        multiply(firstNum, secondNum)
+        return sum = firstNum * secondNum
     }else if (operator === '/'){
-        divide(firstNum, secondNum)
+        return sum = firstNum / secondNum
     } else {
         console.log('error')
 }
@@ -81,7 +61,7 @@ function operands(button) {
         operator = '/'
         display.innerHTML = ''
     } else {
-        operate(previousValue, operator, currentValue)
+        operate(previousValue, currentValue)
         display.innerHTML = `${previousValue} ${operator} ${currentValue}`
         sumDisplay.innerHTML = `${sum}`
     }   
