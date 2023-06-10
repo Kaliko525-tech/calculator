@@ -100,4 +100,15 @@ function delete1() {
     currentNum = currentNum.slice(0, -1)
 }
 
+function convert() {
+    if(currentNum.includes('-')){
+        
+        display.textContent = display.textContent.slice(1,2)
+        currentNum = currentNum.slice(1,2)
+    } else {
+    currentNum = currentNum.replace(`${currentNum}`, `-${currentNum}`)
+    display.textContent = currentNum
+    }
+}
+
 buttonCont()
