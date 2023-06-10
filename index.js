@@ -14,7 +14,7 @@ function calculate() {
     let previous = parseFloat(previousNum)
     let current = parseFloat(currentNum)
     let result
-    if (operationState == '+') {
+     if (operationState == '+') {
         result = previous + current
     } else if (operationState == '-') {
         result = previous - current
@@ -60,8 +60,13 @@ function buttonCont() {
     })
 
     equalButton.addEventListener('click', () => {
+        if (operationState == '/' && currentNum == 0){
+            display.textContent = 'You Can\'t divide by 0'
+            sumDisplay.textContent = 'lol'
+        } else {
         calculate();
         refreshDisplay()
+        }
     });
 
     clearAll.addEventListener('click', () => {
@@ -84,8 +89,10 @@ function operate() {
 }
 
 function refreshDisplay() {
+    
     display.textContent = operationState + '' + currentNum
     sumDisplay.textContent = previousNum
+    
 }
 
 function delete1() {
