@@ -44,13 +44,5 @@ body {
     border: 1px solid;
 }
 
-#clear {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
 
-#zero {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
 
