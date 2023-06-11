@@ -30,44 +30,73 @@ body {
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
-    border: 1px solid;
-    width: 300px;
+    border: 5px black;
+    border-style: inset groove none groove;
+    width: 350px;
     height: 70px;
+    background-color: lightgreen;
 }
 
 .calculator {
     display: grid;
     grid-template-columns:auto auto auto auto;
-    gap: 1px;
-    height: 350px;
-    width: 300px;
-    border: 1px solid;
+    gap: 5px;
+    height: 400px;
+    width: 350px;
+    border: 5px groove black;
+    background-color: silver;
+
 }
 
 .ops {
-    background-color: aqua;
+    background-color: rgb(255, 199, 58);
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 .equ{
-    background-color: blueviolet;
+    background-color: rgba(226, 139, 80, 0.836);
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 .num {
-    background-color: aquamarine;
+    background-color: lightyellow;
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 #convert{
-    background-color: red;
+    background-color: lightcyan;
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 #clear {
-    background-color: orange;
+    background-color: palevioletred;
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 #del {
-    background-color: green;
+    background-color: palevioletred;
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
 }
 
 #Percentage {
-    background-color: turquoise;
+    background-color: rgb(255, 199, 58) ;
+    border-radius: 8%;
+    border: inset 5px grey;
+    margin: 5px
+}
+
+button {
+    font-size: large;
 }
