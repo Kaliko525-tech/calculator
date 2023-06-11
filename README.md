@@ -56,9 +56,9 @@ I am feeling rather down by this project, it just shows that I have no idea what
 still have a few things to do before finishing up this project.
 
 1. leave a snarky remark if someone tried to divide by 0. (done)
-2. make it look nice with CSS
+2. make it look nice with CSS (done)
 3.add a backspace button (done)
-4. add keyboard support
+4. add keyboard support --- will try another time
 
 extra extra credit:
 
