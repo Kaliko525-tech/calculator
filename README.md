@@ -51,8 +51,6 @@ re-wrote everything in the JS from scratch, well I copied a answer from stackOve
 
 feel bad I just copied someone elses code but It works and the display showed some bugs which I managed to fix, sadly I can only show in the display what your current operator selection is, can't actually show you the whole sum. 
 
-I am feeling rather down by this project, it just shows that I have no idea what I am doing and I need to go over the basics of JavaScript again before moving on to the advanced side of things. My original code was messy, simple, un-flexible, and I couldn't even figure out how to get the sum of a simple calculation and carry it over to a new sum, like 1 + 1 = 2 *3 = 6. 
-
 still have a few things to do before finishing up this project.
 
 1. leave a snarky remark if someone tried to divide by 0. (done)
