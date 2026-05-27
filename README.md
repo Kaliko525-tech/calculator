@@ -69,3 +69,8 @@ Then i press button ONE TWO DISPLAY SHOWS 12.
 
 if I press PLUS OR EQUALS DISPLAY shows 36. 
 
+
+okay we got there. very nice. AI helped me build the functions. i really hope i get to a point where i can do this for myself, but i guess its okay. I just feel bad, but i suppose I would have just done this with stack over flow anyway, i just have a much faster way of doing it now. 
+
+
+
